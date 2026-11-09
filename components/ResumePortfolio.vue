@@ -694,11 +694,11 @@ const toolsSkills = [
               </p>
             </div>
             <div class="text-[11px] font-mono text-red-400 bg-red-500/10 px-2.5 py-1 rounded-md border border-red-500/20 self-start sm:self-auto">
-              6 Stacks Available
+              7 Stacks Available
             </div>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3.5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-7 gap-3">
             <!-- Next.js -->
             <div class="p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/10 hover:border-cyan-500/30 transition-all flex flex-col justify-between space-y-3">
               <div>
@@ -909,6 +909,41 @@ const toolsSkills = [
                   <ExternalLink class="w-3 h-3 ml-0.5" />
                 </a>
               </div>
+            </div>
+
+            <!-- Angular -->
+            <div class="p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/10 hover:border-red-500/30 transition-all flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-red-950/60 border border-red-500/40 flex items-center justify-center font-bold text-xs text-red-400">
+                      A
+                    </div>
+                    <span class="font-bold text-sm text-white">Angular</span>
+                  </div>
+                  <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-red-500/10 text-red-400 border border-red-500/20">
+                    TS 6.0
+                  </span>
+                </div>
+                <p class="text-xs text-neutral-400 mb-2">
+                  Angular 19/22 · Signals · Standalone Components · Vite.
+                </p>
+                <div class="text-[11px] font-mono text-neutral-400">
+                  Local: <a href="http://localhost:8085" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:underline">localhost:8085</a>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-white/10 text-xs font-mono">
+                <a
+                  href="https://github.com/reginaldalfret/portfolio-angular"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1 text-neutral-300 hover:text-red-400 transition-colors"
+                >
+                  <Github class="w-3.5 h-3.5" />
+                  <span>View GitHub Repo</span>
+                  <ExternalLink class="w-3 h-3 ml-0.5" />
+                </a>
+              </div>
             </div>            </div>
           </div>
         </section>
@@ -984,6 +1019,15 @@ const toolsSkills = [
           title="Switch to Rails 8 (Ruby 3.4)"
         >
           <span>Rails</span>
+        </a>
+
+        <a
+          href="/stacks/angular"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Angular (TypeScript 6.0)"
+        >
+          <span>Angular</span>
         </a>
       </div>
     </div>
