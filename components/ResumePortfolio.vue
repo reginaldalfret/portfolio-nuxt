@@ -694,7 +694,7 @@ const toolsSkills = [
               </p>
             </div>
             <div class="text-[11px] font-mono text-red-400 bg-red-500/10 px-2.5 py-1 rounded-md border border-red-500/20 self-start sm:self-auto">
-              9 Stacks Available
+              12 Stacks Available
             </div>
           </div>
 
@@ -1100,6 +1100,104 @@ const toolsSkills = [
                   </a>
                 </div>
               </div>
+            </div>
+            <!-- Jaspr -->
+            <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-emerald-500/40 transition-all flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-emerald-950/80 border border-emerald-500/50 flex items-center justify-center font-bold text-xs text-emerald-400">
+                      🎯
+                    </div>
+                    <span class="font-bold text-sm text-white">Jaspr (Dart Web)</span>
+                  </div>
+                  <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    Dart 3.13.5
+                  </span>
+                </div>
+                <p class="text-xs text-neutral-400 mb-2">
+                  Dart Web Framework · SSR &amp; Hydration · Reactive Components · Tailwind CSS.
+                </p>
+                <div class="text-[11px] font-mono text-neutral-400">
+                  Live Route: <a href="/stacks/jaspr" target="_top" class="text-emerald-400 hover:underline">/stacks/jaspr</a>
+                </div>
+              </div>
+              <div class="space-y-2 pt-2 border-t border-white/10">
+                <a
+                  href="/stacks/jaspr"
+                  target="_top"
+                  class="w-full py-2 px-3 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 font-semibold text-xs border border-emerald-500/40 transition-all flex items-center justify-center gap-1.5 shadow-sm"
+                >
+                  <span>Switch to Jaspr Website</span>
+                </a>
+                <div class="flex items-center justify-between text-xs font-mono text-neutral-400 pt-1">
+                  <a
+                    href="/stacks/jaspr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1 hover:text-emerald-400 transition-colors"
+                  >
+                    <span>Direct Link ↗</span>
+                  </a>
+                  <a
+                    href="https://github.com/reginaldalfret/portfolio-jaspr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1 hover:text-white transition-colors"
+                  >
+                    <span>Source Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Vapor -->
+            <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-sky-500/40 transition-all flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-sky-950/80 border border-sky-500/50 flex items-center justify-center font-bold text-xs text-sky-400">
+                      💧
+                    </div>
+                    <span class="font-bold text-sm text-white">Vapor 4 (Swift)</span>
+                  </div>
+                  <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                    Swift 5.10+
+                  </span>
+                </div>
+                <p class="text-xs text-neutral-400 mb-2">
+                  Server-Side Swift · Vapor 4 · Non-blocking Async I/O (SwiftNIO) · Leaf · Tailwind CSS.
+                </p>
+                <div class="text-[11px] font-mono text-neutral-400">
+                  Live Route: <a href="/stacks/vapor" target="_top" class="text-sky-400 hover:underline">/stacks/vapor</a>
+                </div>
+              </div>
+              <div class="space-y-2 pt-2 border-t border-white/10">
+                <a
+                  href="/stacks/vapor"
+                  target="_top"
+                  class="w-full py-2 px-3 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 font-semibold text-xs border border-sky-500/40 transition-all flex items-center justify-center gap-1.5 shadow-sm"
+                >
+                  <span>Switch to Vapor Website</span>
+                </a>
+                <div class="flex items-center justify-between text-xs font-mono text-neutral-400 pt-1">
+                  <a
+                    href="/stacks/vapor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1 hover:text-sky-400 transition-colors"
+                  >
+                    <span>Direct Link ↗</span>
+                  </a>
+                  <a
+                    href="https://github.com/reginaldalfret/portfolio-vapor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1 hover:text-white transition-colors"
+                  >
+                    <span>Source Code</span>
+                  </a>
+                </div>
+              </div>
             </div>            </div>
           </div>
         </section>
@@ -1208,6 +1306,22 @@ const toolsSkills = [
           title="Switch to Leptos (Rust WebAssembly)"
         >
           <span>Leptos</span>
+        </a>
+        <a
+          href="/stacks/jaspr"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Jaspr (Dart Web)"
+        >
+          <span>Jaspr</span>
+        </a>
+        <a
+          href="/stacks/vapor"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Vapor (Swift 6.0)"
+        >
+          <span>Vapor</span>
         </a>
       </div>
     </div>
