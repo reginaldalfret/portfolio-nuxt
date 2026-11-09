@@ -23,6 +23,16 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ],
+      script: [
+        {
+          innerHTML: `if (window.self !== window.top) { document.documentElement.classList.add('is-embedded'); }`
+        }
+      ],
+      style: [
+        {
+          innerHTML: `html.is-embedded .floating-stack-dock, .is-embedded .floating-stack-dock { display: none !important; }`
+        }
       ]
     }
   }
