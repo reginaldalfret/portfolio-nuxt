@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import {
   Mail,
   Phone,
@@ -22,6 +22,13 @@ import {
 } from 'lucide-vue-next'
 
 const viewMode = ref<'interactive' | 'pdf'>('interactive')
+const isEmbedded = ref(false)
+
+onMounted(() => {
+  if (typeof window !== 'undefined') {
+    isEmbedded.value = window.self !== window.top
+  }
+})
 
 const handlePrint = () => {
   if (import.meta.client) {
@@ -604,22 +611,22 @@ const toolsSkills = [
                 <div class="flex items-start gap-2 text-neutral-200">
                   <span class="text-amber-400 font-bold">🥇</span>
                   <div>
-                    <strong class="text-white">1st – HackIndia 2026</strong>{" "}
-                    <span class="text-neutral-400">(301 Super AI Agents)</span>
+                    <strong class="text-white">1st – HackIndia 2026</strong>
+                    <span class="text-neutral-400"> (301 Super AI Agents)</span>
                   </div>
                 </div>
                 <div class="flex items-start gap-2 text-neutral-200">
                   <span class="text-amber-400 font-bold">🥇</span>
                   <div>
-                    <strong class="text-white">1st – TN Police Hackathon 2025</strong>{" "}
-                    <span class="text-neutral-400">(TOR-UNVEIL)</span>
+                    <strong class="text-white">1st – TN Police Hackathon 2025</strong>
+                    <span class="text-neutral-400"> (TOR-UNVEIL)</span>
                   </div>
                 </div>
                 <div class="flex items-start gap-2 text-neutral-200">
                   <span class="text-amber-400 font-bold">🥇</span>
                   <div>
-                    <strong class="text-white">1st – Blaze a Trail 2.0</strong>{" "}
-                    <span class="text-neutral-400">(Crop Recommendation)</span>
+                    <strong class="text-white">1st – Blaze a Trail 2.0</strong>
+                    <span class="text-neutral-400"> (Crop Recommendation)</span>
                   </div>
                 </div>
                 <div class="flex items-start gap-2 text-neutral-200">
@@ -637,8 +644,8 @@ const toolsSkills = [
                 <div class="flex items-start gap-2 text-neutral-200">
                   <span class="text-cyan-400 font-bold">🚀</span>
                   <div>
-                    <strong class="text-white">70+ other projects</strong>{" "}
-                    <span class="text-neutral-400">across AI, Web &amp; Automation</span>
+                    <strong class="text-white">70+ other projects</strong>
+                    <span class="text-neutral-400"> across AI, Web &amp; Automation</span>
                   </div>
                 </div>
               </div>
@@ -807,7 +814,7 @@ const toolsSkills = [
             BETTER TECHNOLOGY • HAPPIER PEOPLE
           </div>
           <div>
-            Powered by Nuxt 3 &amp; Vue 3 • Built by Reginald Alfret V •{" "}
+            Powered by Nuxt 3 &amp; Vue 3 • Built by Reginald Alfret V • 
             <a
               href="/Reginald_Alfret_Resume.pdf"
               class="text-cyan-400 hover:underline"
@@ -819,20 +826,18 @@ const toolsSkills = [
       </div>
     </div>
 
-    <!-- Floating Bottom Stack Dock -->
-    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
+    <!-- Floating Bottom Stack Dock (Only shown when viewed directly, hidden when embedded in Next.js parent) -->
+    <div v-if="!isEmbedded" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
       <div class="backdrop-blur-xl bg-black/85 border border-white/15 rounded-full py-1.5 px-3.5 shadow-2xl flex items-center gap-2 text-xs">
         <span class="text-[11px] font-mono text-neutral-400 hidden sm:inline">Stack:</span>
         
         <a
-          href="https://reginaldalfret.tech"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/"
+          target="_top"
           class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
-          title="Production Next.js Version"
+          title="Switch to Next.js (Production)"
         >
           <span>Next.js</span>
-          <ExternalLink class="w-3 h-3 opacity-60" />
         </a>
 
         <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold shadow-sm">
@@ -841,14 +846,12 @@ const toolsSkills = [
         </span>
 
         <a
-          href="https://github.com/reginaldalfret/portfolio-django"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/stacks/django"
+          target="_top"
           class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
           title="Switch to Django (Python 3.13)"
         >
           <span>Django</span>
-          <ExternalLink class="w-3 h-3 opacity-60" />
         </a>
       </div>
     </div>

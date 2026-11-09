@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '~/assets/css/main.css'
   ],
   app: {
+    baseURL: '/stacks/nuxt/',
     head: {
       title: 'Reginald Alfret V | Open-Source Contributor · AI & DS Engineer',
       meta: [
