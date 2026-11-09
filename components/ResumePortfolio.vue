@@ -694,11 +694,11 @@ const toolsSkills = [
               </p>
             </div>
             <div class="text-[11px] font-mono text-red-400 bg-red-500/10 px-2.5 py-1 rounded-md border border-red-500/20 self-start sm:self-auto">
-              7 Stacks Available
+              8 Stacks Available
             </div>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-7 gap-3">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-8 gap-3">
             <!-- Next.js -->
             <div class="p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/10 hover:border-cyan-500/30 transition-all flex flex-col justify-between space-y-3">
               <div>
@@ -944,6 +944,58 @@ const toolsSkills = [
                   <ExternalLink class="w-3 h-3 ml-0.5" />
                 </a>
               </div>
+            </div>
+            <!-- Blazor WASM Card -->
+            <div class="p-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-purple-500/40 transition-all flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-purple-950/60 border border-purple-500/40 flex items-center justify-center font-bold text-xs text-purple-300">
+                      B
+                    </div>
+                    <span class="font-bold text-sm text-white">Blazor</span>
+                  </div>
+                  <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                    .NET 8
+                  </span>
+                </div>
+                <p class="text-xs text-neutral-400 mb-2">
+                  .NET 8 · C# Client-Side WASM · Standalone SPA · Tailwind CSS.
+                </p>
+                <div class="text-[11px] font-mono text-neutral-400">
+                  Live Route: <a href="/stacks/blazor" target="_top" class="text-purple-400 hover:underline">/stacks/blazor</a>
+                </div>
+              </div>
+              <div class="space-y-2 pt-2 border-t border-white/10">
+                <a
+                  href="/stacks/blazor"
+                  target="_top"
+                  class="w-full py-2 px-3 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 font-semibold text-xs border border-purple-500/40 transition-all flex items-center justify-center gap-1.5 shadow-sm"
+                >
+                  <Sparkles class="w-3.5 h-3.5" />
+                  <span>Switch to Blazor Website</span>
+                </a>
+                <div class="flex items-center justify-between text-xs font-mono text-neutral-400 pt-1">
+                  <a
+                    href="/stacks/blazor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1 hover:text-purple-400 transition-colors"
+                  >
+                    <span>Direct Link</span>
+                    <ExternalLink class="w-3 h-3" />
+                  </a>
+                  <a
+                    href="https://github.com/reginaldalfret/portfolio-blazor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1 hover:text-white transition-colors"
+                  >
+                    <Github class="w-3.5 h-3.5" />
+                    <span>Source Code</span>
+                  </a>
+                </div>
+              </div>
             </div>            </div>
           </div>
         </section>
@@ -1028,6 +1080,14 @@ const toolsSkills = [
           title="Switch to Angular (TypeScript 6.0)"
         >
           <span>Angular</span>
+        </a>
+        <a
+          href="/stacks/blazor"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Blazor (.NET 8 WASM)"
+        >
+          <span>Blazor</span>
         </a>
       </div>
     </div>
