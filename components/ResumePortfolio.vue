@@ -693,12 +693,12 @@ const toolsSkills = [
                 Explore this exact resume portfolio built across 3 modern engineering stacks
               </p>
             </div>
-            <div class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20 self-start sm:self-auto">
-              3 Stacks Available
+            <div class="text-[11px] font-mono text-lime-400 bg-lime-500/10 px-2.5 py-1 rounded-md border border-lime-500/20 self-start sm:self-auto">
+              4 Stacks Available
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
             <!-- Next.js -->
             <div class="p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/10 hover:border-cyan-500/30 transition-all flex flex-col justify-between space-y-3">
               <div>
@@ -805,6 +805,41 @@ const toolsSkills = [
                 </a>
               </div>
             </div>
+
+            <!-- Spring Boot -->
+            <div class="p-4 rounded-2xl bg-white/[0.02] hover:bg-white/[0.04] border border-white/10 hover:border-lime-500/30 transition-all flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-lime-950/60 border border-lime-500/40 flex items-center justify-center font-bold text-xs text-lime-400">
+                      🍃
+                    </div>
+                    <span class="font-bold text-sm text-white">Spring Boot 3</span>
+                  </div>
+                  <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-lime-500/10 text-lime-400 border border-lime-500/20">
+                    JAVA 21
+                  </span>
+                </div>
+                <p class="text-xs text-neutral-400 mb-2">
+                  Java 21 · Spring Boot 3.4 · Thymeleaf SSR · Embedded Tomcat · Maven.
+                </p>
+                <div class="text-[11px] font-mono text-neutral-400">
+                  Local: <a href="http://localhost:8082" target="_blank" rel="noopener noreferrer" class="text-lime-400 hover:underline">localhost:8082</a>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-white/10 text-xs font-mono">
+                <a
+                  href="https://github.com/reginaldalfret/portfolio-springboot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1 text-neutral-300 hover:text-lime-400 transition-colors"
+                >
+                  <Github class="w-3.5 h-3.5" />
+                  <span>View GitHub Repo</span>
+                  <ExternalLink class="w-3 h-3 ml-0.5" />
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -827,7 +862,7 @@ const toolsSkills = [
     </div>
 
     <!-- Floating Bottom Stack Dock (Only shown when viewed directly, hidden when embedded in Next.js parent) -->
-    <div v-if="!isEmbedded" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
+    <div v-if="!isEmbedded" class="floating-stack-dock fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
       <div class="backdrop-blur-xl bg-black/85 border border-white/15 rounded-full py-1.5 px-3.5 shadow-2xl flex items-center gap-2 text-xs">
         <span class="text-[11px] font-mono text-neutral-400 hidden sm:inline">Stack:</span>
         
@@ -852,6 +887,15 @@ const toolsSkills = [
           title="Switch to Django (Python 3.13)"
         >
           <span>Django</span>
+        </a>
+
+        <a
+          href="/stacks/springboot"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Spring Boot (Java 21)"
+        >
+          <span>Spring Boot</span>
         </a>
       </div>
     </div>
