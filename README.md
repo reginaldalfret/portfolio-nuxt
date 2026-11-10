@@ -1,36 +1,87 @@
-# Reginald Alfret V — Portfolio (Nuxt 3 Stack)
+# Reginald Alfret V — Portfolio (Nuxt 3)
+## 12 Stacks. 1 Product. — Native Nuxt 3 Implementation
 
-Parallel Nuxt 3 implementation of the obsidian personal resume portfolio, maintaining full fidelity with the production Next.js 14 version at [reginaldalfret.tech](https://reginaldalfret.tech).
+**Author:** Reginald Alfret V  
+**Role:** Open-Source Contributor · AI & Data Science Engineer · Full-Stack Developer  
+**Live Personal Portfolio:** [https://reginaldalfret.tech](https://reginaldalfret.tech)  
+**Central Engineering Lab:** [https://reginaldalfret.tech/lab](https://reginaldalfret.tech/lab)  
+**Repository:** [https://github.com/reginaldalfret/portfolio-nuxt](https://github.com/reginaldalfret/portfolio-nuxt)  
+**Runtime Classification:** `NATIVE VERIFIED (NITRO HYDRATION)`
 
-## Tech Stack
-- **Framework**: [Nuxt 3](https://nuxt.com/) (v4.6.4 with compatibility version 3)
-- **Engine**: Nitro Engine + Vite
-- **UI & State**: Vue 3 (`<script setup>`, Composition API)
-- **Styling**: Tailwind CSS 3 with Obsidian Liquid-Glass theme & ambient glows
-- **Icons**: `lucide-vue-next`
-- **Asset Handling**: Embedded PDF visual viewer + print trigger
+---
 
-## Featured Sections
-- **⚡ Open-Source Contributions**: 30 verified merged PRs across Apple, Google, Microsoft, Meta, AWS, NVIDIA, NASA, Netflix, Stripe, Intel, etc.
-- **💼 Professional Experience**: Software Developer at DailyGurus, Data Science Intern at Data Patterns.
-- **🚀 Key Projects**: 301 Super AI Agents (1st HackIndia 2026), TOR-UNVEIL (1st TN Police Hackathon 2025), AI Crop Recommendation Engine (1st Blaze a Trail 2.0).
-- **🛠️ Technical Skills & Education**: B.Tech AI & Data Science (CGPA 8.2), certifications, and technical domains.
+### 1. Executive Summary
 
-## Quick Start
+This repository is one of **twelve independent native technology implementations** of the personal portfolio of Reginald Alfret V. 
 
+The core concept is:
+
+**12 STACKS. 1 PRODUCT.**
+
+Rather than rendering static HTML replicas or shared client templates, this repository is built genuinely within the **Nuxt 3** ecosystem, utilizing Vue 3.5 / TypeScript 5.7 and native framework conventions (Universal Nitro SSR & Client Hydration).
+
+---
+
+### 2. Architectural Specification
+
+| Metric / Attribute | Specification |
+|---|---|
+| **Framework** | Nuxt 3 (3.15.4) |
+| **Language** | Vue 3.5 / TypeScript 5.7 |
+| **Runtime Engine** | Node.js 22 / Nitro Server Engine |
+| **Render Paradigm** | Universal Nitro SSR & Client Hydration |
+| **Verification Status** | NATIVE VERIFIED (NITRO HYDRATION) |
+| **Parent Ecosystem** | 12 Stacks. 1 Product. Engineering Showcase |
+
+---
+
+### 3. Navigation & Ecosystem Integration
+
+This application includes contextual integration back to the master portfolio ecosystem:
+
+1. **Top Context Banner:** Identifies that this deployment is part of the 12 Stacks. 1 Product experiment.
+2. **Personal Portfolio Link:** Direct link to [https://reginaldalfret.tech](https://reginaldalfret.tech).
+3. **Engineering Lab Link:** Direct link to [https://reginaldalfret.tech/lab](https://reginaldalfret.tech/lab) where users can compare this framework's performance, memory footprint, and architecture against the other 11 stacks.
+
+---
+
+### 4. Prerequisites & Local Development
+
+#### Prerequisites
+- Node.js 20+ / npm
+
+#### Installation
 ```bash
-# Install dependencies
-pnpm install
-
-# Start local development server
-pnpm dev
+git clone https://github.com/reginaldalfret/portfolio-nuxt.git
+cd Portfolio-Nuxt
+npm install
 ```
-Open [http://localhost:3000](http://localhost:3000) to view in browser.
 
+#### Running Development Server
 ```bash
-# Production build
-pnpm build
-
-# Preview production build
-node .output/server/index.mjs
+npm run dev
 ```
+
+#### Production Build
+```bash
+npm run build
+```
+
+#### Running Test Suite
+```bash
+npm test
+```
+
+---
+
+### 5. Benchmark & Empirical Telemetry
+
+All performance metrics for this Nuxt 3 implementation were audited under controlled scientific conditions (10 automated test trials, Navigation Timing Level 2, Resource Timing manifests, Lighthouse CLI).
+
+View verified telemetry, cold/warm cache comparisons, and payload breakdowns in the [Polyglot Engineering Lab](https://reginaldalfret.tech/lab).
+
+---
+
+### 6. License & Copyright
+
+© 2026 Reginald Alfret V. All rights reserved.
